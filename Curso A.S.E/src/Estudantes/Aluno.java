@@ -1,16 +1,17 @@
+package Estudantes;
 public class Aluno{
     Turma turma;
     private String nome;
     private int matricula;
     private double mensalidade;
 
-    public Aluno(Turma turma, String nome, int matricula) {
-        this.turma = turma;
+    public Aluno(String nome, Turma turma, int matricula) {
         this.nome = nome;
+        this.turma = turma;
         this.matricula = matricula;
     }
 
-    public void calcularMatricula(int diaPago){
+    public void calcularMensalidade(int diaPago){
         switch(turma){
             case ESA:
             if(diaPago<=10){
@@ -42,8 +43,10 @@ public class Aluno{
     }
 
     public void status(){
+        System.out.println("############");
         System.out.println("Nome do aluno: "+this.nome);
         System.out.println("Matícula: "+this.matricula);
         System.out.println("Turma: "+this.turma+", Mensalidade: "+this.mensalidade);
+        System.out.println("############");
     }
 }

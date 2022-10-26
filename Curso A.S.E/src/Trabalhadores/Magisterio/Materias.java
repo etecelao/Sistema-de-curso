@@ -1,3 +1,4 @@
+package Trabalhadores.Magisterio;
 public enum Materias {
     MATEMATICA, QUIMICA, FISICA, BIOLOGIA, PORTUGUES, LITERATURA, GEOGRAFIA, HISTORIA, INGLES, REDACAO;
 }

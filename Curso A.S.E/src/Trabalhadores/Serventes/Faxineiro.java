@@ -1,7 +1,11 @@
-public class Servente extends Funcionario{
+package Trabalhadores.Serventes;
+
+import Trabalhadores.Funcionario;
+
+public class Faxineiro extends Funcionario{
     private int tempo_trabalho_anos;
 
-    public Servente(String nome, int tempo_trabalho_anos) {
+    public Faxineiro(String nome, int tempo_trabalho_anos) {
         super(nome);
         this.tempo_trabalho_anos = tempo_trabalho_anos;
     }
@@ -20,7 +24,9 @@ public class Servente extends Funcionario{
     }
 
     public void status(){
+        System.out.println("############");
         System.out.println("Nome: "+this.nome);
         System.out.println("Salário: "+this.salario);
+        System.out.println("############");
     }
 }
