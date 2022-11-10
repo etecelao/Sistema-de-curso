@@ -38,6 +38,15 @@ public class Professor extends Funcionario{
         }
     }
 
+    //Verifica qual salário é maior
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(this == obj) return false;
+        Professor prof = (Professor) obj;
+        return this.salario > prof.salario;
+    }
+
     public void status(){
         System.out.println("############");
         System.out.println("Nome do professor: "+this.nome);
