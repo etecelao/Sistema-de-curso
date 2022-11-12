@@ -43,6 +43,7 @@ public class Professor extends Funcionario{
     public boolean equals(Object obj) {
         if(obj == null) return false;
         if(this == obj) return false;
+        if(obj.getClass() != this.getClass()) return false;
         Professor prof = (Professor) obj;
         return this.salario > prof.salario;
     }
